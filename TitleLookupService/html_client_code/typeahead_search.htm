@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <!-- This is absolutely NOT production-ready code. -->
+    <head>
+        <title>typeahead test</title>
+        <meta charset="UTF-8">
+        
+        <style type="text/css">
+            body,ul,p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9em;
+                color: slategrey;
+                border-collapse: collapse;
+            }
+            th, td {
+                font-size: 13px;
+            }
+            input {
+                margin: 5px;
+                padding: 10px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+            "use strict";
+            var imdbData;
+            var imdbDataTable;
+
+            $(document).ready(function() {
+
+                $("#input_1").keyup($.debounce(300, callTitleApi));
+                $("#input_2").click($.debounce(300, callTitleApi));
+
+                imdbDataTable = $('#resultsTable').DataTable( {
+                    data: imdbData,
+                    "searching": false,
+                    "order": [[ 7, "desc" ]],
+                    "pageLength": 100,
+                    columnDefs: [
+                        { "searchable": false, "orderable": false, 
+                            "defaultContent": "",
+                            "className": "dt-center",
+                            title: "No.", "targets": 0},
+                        { data: "titleID", title: "Title ID", targets: 1 },
+                        { data: "contentType", title: "Content Type", targets: 2 },
+                        { data: "displayTitle", title: "Title", targets: 3 },
+                        { data: "year", title: "Year", "className": "dt-center", targets: 4 },
+                        { data: "directors", title: "Directors", targets: 5 },
+                        { data: "actors", title: "Actors", targets: 6 },
+                        { data: "score", title: "Match Score", targets: 7 }
+                    ]
+                });
+
+                imdbDataTable.on( 'order.dt search.dt length.dt', function () {
+                    renumberColumnOne();
+                });
+
+            });
+            
+            $("#input_1").val('');
+            var endpoint = "http://localhost:7000";
+            var resource = "/titles";
+            
+            function callTitleApi() {
+                $.ajax({
+                    method: "POST",
+                    headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                    url: endpoint + resource,
+                    dataType: "json",
+                    data: $("#search_opts").serialize(),
+                    success: function(imdbData) {populateTable(imdbData)},
+                    error: function(data) {handleError(data)}
+                });
+            }
+
+            function handleError(data) {
+                alert(data.responseText);
+            }
+                        
+            function populateTable(imdbData) {
+                imdbDataTable.clear().rows.add(imdbData).columns.adjust().draw();
+                renumberColumnOne();
+            }
+
+            function renumberColumnOne() {
+                if (imdbDataTable.page.info().recordsTotal != 0) {
+                    $("#resultsTable tr td:nth-child(1)").each(function( index ) {
+                        $(this).text(index+1);
+                    });
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form id="search_opts">
+            <h2>
+            My IMDb Title Search
+            </h2>
+            Search terms:
+            <br/>
+            <div>
+                <input id="input_1" class="typeahead" name="searchTerm" type="text" size="50" autofocus>
+                <input id="input_2" type="checkbox" name="fuzzySearch" value="fuzzy">Use n-gram Index<br>
+            </div>
+        </form>
+        <br/>
+        <div id="summary_1"></div>
+        <div>
+            <table id="resultsTable" class="display" style="width:100%"></table>
+        </div>
+    </body>
+</html>
