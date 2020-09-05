@@ -28,9 +28,9 @@
 
 <body>
 
-<h2>SPI Names in Lucene 8.4.0</h2>
+<h2>SPI Names in Lucene 8.3.0</h2>
 
-The SPI names can used to build custom analyzers, for example:
+The SPI names can be used to build custom analyzers, for example:
 
 <pre>
 Analyzer analyzer = CustomAnalyzer.builder()
@@ -46,20 +46,21 @@ Analyzer analyzer = CustomAnalyzer.builder()
 <tr><th>SPI Name</th><th>Class Name</th></tr>
 </thead>
 <tbody>
-<tr><td>edgeNGram</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ngram/EdgeNGramTokenizerFactory.html">EdgeNGramTokenizerFactory</a></td></tr>
-<tr><td>icu</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-icu/org/apache/lucene/analysis/icu/segmentation/ICUTokenizerFactory.html">ICUTokenizerFactory</a></td></tr>
-<tr><td>keyword</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/KeywordTokenizerFactory.html">KeywordTokenizerFactory</a></td></tr>
-<tr><td>letter</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/LetterTokenizerFactory.html">LetterTokenizerFactory</a></td></tr>
-<tr><td>nGram</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ngram/NGramTokenizerFactory.html">NGramTokenizerFactory</a></td></tr>
-<tr><td>pathHierarchy</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/path/PathHierarchyTokenizerFactory.html">PathHierarchyTokenizerFactory</a></td></tr>
-<tr><td>pattern</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternTokenizerFactory.html">PatternTokenizerFactory</a></td></tr>
-<tr><td>simplePatternSplit</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/SimplePatternSplitTokenizerFactory.html">SimplePatternSplitTokenizerFactory</a></td></tr>
-<tr><td>simplePattern</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/SimplePatternTokenizerFactory.html">SimplePatternTokenizerFactory</a></td></tr>
-<tr><td>standard</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/standard/StandardTokenizerFactory.html">StandardTokenizerFactory</a></td></tr>
-<tr><td>uax29UrlEmail</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/standard/UAX29URLEmailTokenizerFactory.html">UAX29URLEmailTokenizerFactory</a></td></tr>
-<tr><td>thai</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/th/ThaiTokenizerFactory.html">ThaiTokenizerFactory</a></td></tr>
-<tr><td>whitespace</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/WhitespaceTokenizerFactory.html">WhitespaceTokenizerFactory</a></td></tr>
-<tr><td>wikipedia</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/wikipedia/WikipediaTokenizerFactory.html">WikipediaTokenizerFactory</a></td></tr>
+<tr><td>classic</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/standard/ClassicTokenizerFactory.html">ClassicTokenizerFactory</a></td></tr>
+<tr><td>edgeNGram</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ngram/EdgeNGramTokenizerFactory.html">EdgeNGramTokenizerFactory</a></td></tr>
+<tr><td>icu</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-icu/org/apache/lucene/analysis/icu/segmentation/ICUTokenizerFactory.html">ICUTokenizerFactory</a></td></tr>
+<tr><td>keyword</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/KeywordTokenizerFactory.html">KeywordTokenizerFactory</a></td></tr>
+<tr><td>letter</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/LetterTokenizerFactory.html">LetterTokenizerFactory</a></td></tr>
+<tr><td>nGram</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ngram/NGramTokenizerFactory.html">NGramTokenizerFactory</a></td></tr>
+<tr><td>pathHierarchy</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/path/PathHierarchyTokenizerFactory.html">PathHierarchyTokenizerFactory</a></td></tr>
+<tr><td>pattern</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternTokenizerFactory.html">PatternTokenizerFactory</a></td></tr>
+<tr><td>simplePattern</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/SimplePatternTokenizerFactory.html">SimplePatternTokenizerFactory</a></td></tr>
+<tr><td>simplePatternSplit</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/SimplePatternSplitTokenizerFactory.html">SimplePatternSplitTokenizerFactory</a></td></tr>
+<tr><td>standard</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/standard/StandardTokenizerFactory.html">StandardTokenizerFactory</a></td></tr>
+<tr><td>thai</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/th/ThaiTokenizerFactory.html">ThaiTokenizerFactory</a></td></tr>
+<tr><td>uax29UrlEmail</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/standard/UAX29URLEmailTokenizerFactory.html">UAX29URLEmailTokenizerFactory</a></td></tr>
+<tr><td>whitespace</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/WhitespaceTokenizerFactory.html">WhitespaceTokenizerFactory</a></td></tr>
+<tr><td>wikipedia</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/wikipedia/WikipediaTokenizerFactory.html">WikipediaTokenizerFactory</a></td></tr>
 </tbody>
 </table>
 
@@ -69,12 +70,11 @@ Analyzer analyzer = CustomAnalyzer.builder()
 <tr><th>SPI Name</th><th>Class Name</th></tr>
 </thead>
 <tbody>
-<tr><td>htmlStrip</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/charfilter/HTMLStripCharFilterFactory.html">HTMLStripCharFilterFactory</a></td></tr>
-<tr><td>icuNormalizer2</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUNormalizer2CharFilterFactory.html">ICUNormalizer2CharFilterFactory</a></td></tr>
-<tr><td>mapping</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/charfilter/MappingCharFilterFactory.html">MappingCharFilterFactory</a></td></tr>
-<tr><td>patternReplace</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternReplaceCharFilterFactory.html">PatternReplaceCharFilterFactory</a></td></tr>
-<tr><td>persian</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/fa/PersianCharFilterFactory.html">PersianCharFilterFactory</a></td></tr>
-</tbody>
+<tr><td>htmlStrip</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/charfilter/HTMLStripCharFilterFactory.html">HTMLStripCharFilterFactory</a></td></tr>
+<tr><td>icuNormalizer2</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUNormalizer2CharFilterFactory.html">ICUNormalizer2CharFilterFactory</a></td></tr>
+<tr><td>mapping</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/charfilter/MappingCharFilterFactory.html">MappingCharFilterFactory</a></td></tr>
+<tr><td>patternReplace</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternReplaceCharFilterFactory.html">PatternReplaceCharFilterFactory</a></td></tr>
+<tr><td>persian</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/fa/PersianCharFilterFactory.html">PersianCharFilterFactory</a></td></tr></tbody>
 </table>
 
 <h3>Token Filters</h3>
@@ -83,109 +83,110 @@ Analyzer analyzer = CustomAnalyzer.builder()
 <tr><th>SPI Name</th><th>Class Name</th></tr>
 </thead>
 <tbody>
-<tr><td>apostrophe</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/tr/ApostropheFilterFactory.html">ApostropheFilterFactory</a></td></tr>
-<tr><td>arabicNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ar/ArabicNormalizationFilterFactory.html">ArabicNormalizationFilterFactory</a></td></tr>
-<tr><td>arabicStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ar/ArabicStemFilterFactory.html">ArabicStemFilterFactory</a></td></tr>
-<tr><td>bulgarianStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/bg/BulgarianStemFilterFactory.html">BulgarianStemFilterFactory</a></td></tr>
-<tr><td>bengaliNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/bn/BengaliNormalizationFilterFactory.html">BengaliNormalizationFilterFactory</a></td></tr>
-<tr><td>bengaliStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/bn/BengaliStemFilterFactory.html">BengaliStemFilterFactory</a></td></tr>
-<tr><td>brazilianStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/br/BrazilianStemFilterFactory.html">BrazilianStemFilterFactory</a></td></tr>
-<tr><td>cjkBigram</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/cjk/CJKBigramFilterFactory.html">CJKBigramFilterFactory</a></td></tr>
-<tr><td>cjkWidth</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/cjk/CJKWidthFilterFactory.html">CJKWidthFilterFactory</a></td></tr>
-<tr><td>soraniNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ckb/SoraniNormalizationFilterFactory.html">SoraniNormalizationFilterFactory</a></td></tr>
-<tr><td>soraniStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ckb/SoraniStemFilterFactory.html">SoraniStemFilterFactory</a></td></tr>
-<tr><td>commonGrams</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsFilterFactory.html">CommonGramsFilterFactory</a></td></tr>
-<tr><td>commonGramsQuery</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsQueryFilterFactory.html">CommonGramsQueryFilterFactory</a></td></tr>
-<tr><td>dictionaryCompoundWord</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/compound/DictionaryCompoundWordTokenFilterFactory.html">DictionaryCompoundWordTokenFilterFactory</a></td></tr>
-<tr><td>hyphenationCompoundWord</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/compound/HyphenationCompoundWordTokenFilterFactory.html">HyphenationCompoundWordTokenFilterFactory</a></td></tr>
-<tr><td>decimalDigit</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/DecimalDigitFilterFactory.html">DecimalDigitFilterFactory</a></td></tr>
-<tr><td>lowercase</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/LowerCaseFilterFactory.html">LowerCaseFilterFactory</a></td></tr>
-<tr><td>stop</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/StopFilterFactory.html">StopFilterFactory</a></td></tr>
-<tr><td>type</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/TypeTokenFilterFactory.html">TypeTokenFilterFactory</a></td></tr>
-<tr><td>uppercase</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/UpperCaseFilterFactory.html">UpperCaseFilterFactory</a></td></tr>
-<tr><td>czechStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/cz/CzechStemFilterFactory.html">CzechStemFilterFactory</a></td></tr>
-<tr><td>germanLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/de/GermanLightStemFilterFactory.html">GermanLightStemFilterFactory</a></td></tr>
-<tr><td>germanMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/de/GermanMinimalStemFilterFactory.html">GermanMinimalStemFilterFactory</a></td></tr>
-<tr><td>germanNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/de/GermanNormalizationFilterFactory.html">GermanNormalizationFilterFactory</a></td></tr>
-<tr><td>germanStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/de/GermanStemFilterFactory.html">GermanStemFilterFactory</a></td></tr>
-<tr><td>greekLowercase</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/el/GreekLowerCaseFilterFactory.html">GreekLowerCaseFilterFactory</a></td></tr>
-<tr><td>greekStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/el/GreekStemFilterFactory.html">GreekStemFilterFactory</a></td></tr>
-<tr><td>englishMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/en/EnglishMinimalStemFilterFactory.html">EnglishMinimalStemFilterFactory</a></td></tr>
-<tr><td>englishPossessive</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/en/EnglishPossessiveFilterFactory.html">EnglishPossessiveFilterFactory</a></td></tr>
-<tr><td>kStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/en/KStemFilterFactory.html">KStemFilterFactory</a></td></tr>
-<tr><td>porterStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/en/PorterStemFilterFactory.html">PorterStemFilterFactory</a></td></tr>
-<tr><td>spanishLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/es/SpanishLightStemFilterFactory.html">SpanishLightStemFilterFactory</a></td></tr>
-<tr><td>spanishMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/es/SpanishMinimalStemFilterFactory.html">SpanishMinimalStemFilterFactory</a></td></tr>
-<tr><td>persianNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/fa/PersianNormalizationFilterFactory.html">PersianNormalizationFilterFactory</a></td></tr>
-<tr><td>finnishLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/fi/FinnishLightStemFilterFactory.html">FinnishLightStemFilterFactory</a></td></tr>
-<tr><td>frenchLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/fr/FrenchLightStemFilterFactory.html">FrenchLightStemFilterFactory</a></td></tr>
-<tr><td>frenchMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/fr/FrenchMinimalStemFilterFactory.html">FrenchMinimalStemFilterFactory</a></td></tr>
-<tr><td>irishLowercase</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ga/IrishLowerCaseFilterFactory.html">IrishLowerCaseFilterFactory</a></td></tr>
-<tr><td>galicianMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/gl/GalicianMinimalStemFilterFactory.html">GalicianMinimalStemFilterFactory</a></td></tr>
-<tr><td>galicianStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/gl/GalicianStemFilterFactory.html">GalicianStemFilterFactory</a></td></tr>
-<tr><td>hindiNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/hi/HindiNormalizationFilterFactory.html">HindiNormalizationFilterFactory</a></td></tr>
-<tr><td>hindiStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/hi/HindiStemFilterFactory.html">HindiStemFilterFactory</a></td></tr>
-<tr><td>hungarianLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/hu/HungarianLightStemFilterFactory.html">HungarianLightStemFilterFactory</a></td></tr>
-<tr><td>hunspellStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/hunspell/HunspellStemFilterFactory.html">HunspellStemFilterFactory</a></td></tr>
-<tr><td>indonesianStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/id/IndonesianStemFilterFactory.html">IndonesianStemFilterFactory</a></td></tr>
-<tr><td>indicNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/in/IndicNormalizationFilterFactory.html">IndicNormalizationFilterFactory</a></td></tr>
-<tr><td>italianLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/it/ItalianLightStemFilterFactory.html">ItalianLightStemFilterFactory</a></td></tr>
-<tr><td>latvianStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/lv/LatvianStemFilterFactory.html">LatvianStemFilterFactory</a></td></tr>
-<tr><td>minHash</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/minhash/MinHashFilterFactory.html">MinHashFilterFactory</a></td></tr>
-<tr><td>asciiFolding</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilterFactory.html">ASCIIFoldingFilterFactory</a></td></tr>
-<tr><td>capitalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/CapitalizationFilterFactory.html">CapitalizationFilterFactory</a></td></tr>
-<tr><td>codepointCount</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/CodepointCountFilterFactory.html">CodepointCountFilterFactory</a></td></tr>
-<tr><td>concatenateGraph</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ConcatenateGraphFilterFactory.html">ConcatenateGraphFilterFactory</a></td></tr>
-<tr><td>dateRecognizer</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/DateRecognizerFilterFactory.html">DateRecognizerFilterFactory</a></td></tr>
-<tr><td>delimitedTermFrequency</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/DelimitedTermFrequencyTokenFilterFactory.html">DelimitedTermFrequencyTokenFilterFactory</a></td></tr>
-<tr><td>fingerprint</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/FingerprintFilterFactory.html">FingerprintFilterFactory</a></td></tr>
-<tr><td>fixBrokenOffsets</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/FixBrokenOffsetsFilterFactory.html">FixBrokenOffsetsFilterFactory</a></td></tr>
-<tr><td>hyphenatedWords</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/HyphenatedWordsFilterFactory.html">HyphenatedWordsFilterFactory</a></td></tr>
-<tr><td>keepWord</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeepWordFilterFactory.html">KeepWordFilterFactory</a></td></tr>
-<tr><td>keywordMarker</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeywordMarkerFilterFactory.html">KeywordMarkerFilterFactory</a></td></tr>
-<tr><td>keywordRepeat</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeywordRepeatFilterFactory.html">KeywordRepeatFilterFactory</a></td></tr>
-<tr><td>length</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LengthFilterFactory.html">LengthFilterFactory</a></td></tr>
-<tr><td>limitTokenCount</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenCountFilterFactory.html">LimitTokenCountFilterFactory</a></td></tr>
-<tr><td>limitTokenOffset</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenOffsetFilterFactory.html">LimitTokenOffsetFilterFactory</a></td></tr>
-<tr><td>limitTokenPosition</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenPositionFilterFactory.html">LimitTokenPositionFilterFactory</a></td></tr>
-<tr><td>removeDuplicates</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/RemoveDuplicatesTokenFilterFactory.html">RemoveDuplicatesTokenFilterFactory</a></td></tr>
-<tr><td>stemmerOverride</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/StemmerOverrideFilterFactory.html">StemmerOverrideFilterFactory</a></td></tr>
-<tr><td>protectedTerm</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ProtectedTermFilterFactory.html">ProtectedTermFilterFactory</a></td></tr>
-<tr><td>trim</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TrimFilterFactory.html">TrimFilterFactory</a></td></tr>
-<tr><td>truncate</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TruncateTokenFilterFactory.html">TruncateTokenFilterFactory</a></td></tr>
-<tr><td>typeAsSynonym</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TypeAsSynonymFilterFactory.html">TypeAsSynonymFilterFactory</a></td></tr>
-<tr><td>wordDelimiter</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/WordDelimiterFilterFactory.html">WordDelimiterFilterFactory</a></td></tr>
-<tr><td>wordDelimiterGraph</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/WordDelimiterGraphFilterFactory.html">WordDelimiterGraphFilterFactory</a></td></tr>
-<tr><td>scandinavianFolding</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ScandinavianFoldingFilterFactory.html">ScandinavianFoldingFilterFactory</a></td></tr>
-<tr><td>scandinavianNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ScandinavianNormalizationFilterFactory.html">ScandinavianNormalizationFilterFactory</a></td></tr>
-<tr><td>edgeNGram</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ngram/EdgeNGramFilterFactory.html">EdgeNGramFilterFactory</a></td></tr>
-<tr><td>nGram</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ngram/NGramFilterFactory.html">NGramFilterFactory</a></td></tr>
-<tr><td>norwegianLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/no/NorwegianLightStemFilterFactory.html">NorwegianLightStemFilterFactory</a></td></tr>
-<tr><td>norwegianMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/no/NorwegianMinimalStemFilterFactory.html">NorwegianMinimalStemFilterFactory</a></td></tr>
-<tr><td>patternReplace</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternReplaceFilterFactory.html">PatternReplaceFilterFactory</a></td></tr>
-<tr><td>patternCaptureGroup</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternCaptureGroupFilterFactory.html">PatternCaptureGroupFilterFactory</a></td></tr>
-<tr><td>delimitedPayload</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/payloads/DelimitedPayloadTokenFilterFactory.html">DelimitedPayloadTokenFilterFactory</a></td></tr>
-<tr><td>numericPayload</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/payloads/NumericPayloadTokenFilterFactory.html">NumericPayloadTokenFilterFactory</a></td></tr>
-<tr><td>tokenOffsetPayload</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/payloads/TokenOffsetPayloadTokenFilterFactory.html">TokenOffsetPayloadTokenFilterFactory</a></td></tr>
-<tr><td>typeAsPayload</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/payloads/TypeAsPayloadTokenFilterFactory.html">TypeAsPayloadTokenFilterFactory</a></td></tr>
-<tr><td>portugueseLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseLightStemFilterFactory.html">PortugueseLightStemFilterFactory</a></td></tr>
-<tr><td>portugueseMinimalStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseMinimalStemFilterFactory.html">PortugueseMinimalStemFilterFactory</a></td></tr>
-<tr><td>portugueseStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseStemFilterFactory.html">PortugueseStemFilterFactory</a></td></tr>
-<tr><td>reverseString</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/reverse/ReverseStringFilterFactory.html">ReverseStringFilterFactory</a></td></tr>
-<tr><td>russianLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/ru/RussianLightStemFilterFactory.html">RussianLightStemFilterFactory</a></td></tr>
-<tr><td>shingle</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/shingle/ShingleFilterFactory.html">ShingleFilterFactory</a></td></tr>
-<tr><td>fixedShingle</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/shingle/FixedShingleFilterFactory.html">FixedShingleFilterFactory</a></td></tr>
-<tr><td>snowballPorter</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/snowball/SnowballPorterFilterFactory.html">SnowballPorterFilterFactory</a></td></tr>
-<tr><td>serbianNormalization</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/sr/SerbianNormalizationFilterFactory.html">SerbianNormalizationFilterFactory</a></td></tr>
-<tr><td>swedishLightStem</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/sv/SwedishLightStemFilterFactory.html">SwedishLightStemFilterFactory</a></td></tr>
-<tr><td>synonym</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/synonym/SynonymFilterFactory.html">SynonymFilterFactory</a></td></tr>
-<tr><td>synonymGraph</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/synonym/SynonymGraphFilterFactory.html">SynonymGraphFilterFactory</a></td></tr>
-<tr><td>flattenGraph</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/core/FlattenGraphFilterFactory.html">FlattenGraphFilterFactory</a></td></tr>
-<tr><td>turkishLowercase</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/tr/TurkishLowerCaseFilterFactory.html">TurkishLowerCaseFilterFactory</a></td></tr>
-<tr><td>elision</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-common/org/apache/lucene/analysis/util/ElisionFilterFactory.html">ElisionFilterFactory</a></td></tr>
-<tr><td>icuFolding</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUFoldingFilterFactory.html">ICUFoldingFilterFactory</a></td></tr>
-<tr><td>icuNormalizer2</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUNormalizer2FilterFactory.html">ICUNormalizer2FilterFactory</a></td></tr>
-<tr><td>icuTransform</td><td><a href="https://lucene.apache.org/core/8_4_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUTransformFilterFactory.html">ICUTransformFilterFactory</a></td></tr>
+<tr><td>apostrophe</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/tr/ApostropheFilterFactory.html">ApostropheFilterFactory</a></td></tr>
+<tr><td>arabicNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ar/ArabicNormalizationFilterFactory.html">ArabicNormalizationFilterFactory</a></td></tr>
+<tr><td>arabicStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ar/ArabicStemFilterFactory.html">ArabicStemFilterFactory</a></td></tr>
+<tr><td>asciiFolding</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ASCIIFoldingFilterFactory.html">ASCIIFoldingFilterFactory</a></td></tr>
+<tr><td>bengaliNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/bn/BengaliNormalizationFilterFactory.html">BengaliNormalizationFilterFactory</a></td></tr>
+<tr><td>bengaliStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/bn/BengaliStemFilterFactory.html">BengaliStemFilterFactory</a></td></tr>
+<tr><td>brazilianStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/br/BrazilianStemFilterFactory.html">BrazilianStemFilterFactory</a></td></tr>
+<tr><td>bulgarianStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/bg/BulgarianStemFilterFactory.html">BulgarianStemFilterFactory</a></td></tr>
+<tr><td>capitalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/CapitalizationFilterFactory.html">CapitalizationFilterFactory</a></td></tr>
+<tr><td>cjkBigram</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/cjk/CJKBigramFilterFactory.html">CJKBigramFilterFactory</a></td></tr>
+<tr><td>cjkWidth</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/cjk/CJKWidthFilterFactory.html">CJKWidthFilterFactory</a></td></tr>
+<tr><td>classic</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/standard/ClassicFilterFactory.html">ClassicFilterFactory</a></td></tr>
+<tr><td>codepointCount</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/CodepointCountFilterFactory.html">CodepointCountFilterFactory</a></td></tr>
+<tr><td>commonGrams</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsFilterFactory.html">CommonGramsFilterFactory</a></td></tr>
+<tr><td>commonGramsQuery</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/commongrams/CommonGramsQueryFilterFactory.html">CommonGramsQueryFilterFactory</a></td></tr>
+<tr><td>concatenateGraph</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ConcatenateGraphFilterFactory.html">ConcatenateGraphFilterFactory</a></td></tr>
+<tr><td>czechStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/cz/CzechStemFilterFactory.html">CzechStemFilterFactory</a></td></tr>
+<tr><td>dateRecognizer</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/DateRecognizerFilterFactory.html">DateRecognizerFilterFactory</a></td></tr>
+<tr><td>decimalDigit</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/DecimalDigitFilterFactory.html">DecimalDigitFilterFactory</a></td></tr>
+<tr><td>delimitedPayload</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/payloads/DelimitedPayloadTokenFilterFactory.html">DelimitedPayloadTokenFilterFactory</a></td></tr>
+<tr><td>delimitedTermFrequency</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/DelimitedTermFrequencyTokenFilterFactory.html">DelimitedTermFrequencyTokenFilterFactory</a></td></tr>
+<tr><td>dictionaryCompoundWord</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/compound/DictionaryCompoundWordTokenFilterFactory.html">DictionaryCompoundWordTokenFilterFactory</a></td></tr>
+<tr><td>edgeNGram</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ngram/EdgeNGramFilterFactory.html">EdgeNGramFilterFactory</a></td></tr>
+<tr><td>elision</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/util/ElisionFilterFactory.html">ElisionFilterFactory</a></td></tr>
+<tr><td>englishMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/en/EnglishMinimalStemFilterFactory.html">EnglishMinimalStemFilterFactory</a></td></tr>
+<tr><td>englishPossessive</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/en/EnglishPossessiveFilterFactory.html">EnglishPossessiveFilterFactory</a></td></tr>
+<tr><td>fingerprint</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/FingerprintFilterFactory.html">FingerprintFilterFactory</a></td></tr>
+<tr><td>finnishLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/fi/FinnishLightStemFilterFactory.html">FinnishLightStemFilterFactory</a></td></tr>
+<tr><td>fixBrokenOffsets</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/FixBrokenOffsetsFilterFactory.html">FixBrokenOffsetsFilterFactory</a></td></tr>
+<tr><td>fixedShingle</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/shingle/FixedShingleFilterFactory.html">FixedShingleFilterFactory</a></td></tr>
+<tr><td>flattenGraph</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/FlattenGraphFilterFactory.html">FlattenGraphFilterFactory</a></td></tr>
+<tr><td>frenchLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/fr/FrenchLightStemFilterFactory.html">FrenchLightStemFilterFactory</a></td></tr>
+<tr><td>frenchMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/fr/FrenchMinimalStemFilterFactory.html">FrenchMinimalStemFilterFactory</a></td></tr>
+<tr><td>galicianMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/gl/GalicianMinimalStemFilterFactory.html">GalicianMinimalStemFilterFactory</a></td></tr>
+<tr><td>galicianStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/gl/GalicianStemFilterFactory.html">GalicianStemFilterFactory</a></td></tr>
+<tr><td>germanLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/de/GermanLightStemFilterFactory.html">GermanLightStemFilterFactory</a></td></tr>
+<tr><td>germanMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/de/GermanMinimalStemFilterFactory.html">GermanMinimalStemFilterFactory</a></td></tr>
+<tr><td>germanNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/de/GermanNormalizationFilterFactory.html">GermanNormalizationFilterFactory</a></td></tr>
+<tr><td>germanStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/de/GermanStemFilterFactory.html">GermanStemFilterFactory</a></td></tr>
+<tr><td>greekLowercase</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/el/GreekLowerCaseFilterFactory.html">GreekLowerCaseFilterFactory</a></td></tr>
+<tr><td>greekStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/el/GreekStemFilterFactory.html">GreekStemFilterFactory</a></td></tr>
+<tr><td>hindiNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/hi/HindiNormalizationFilterFactory.html">HindiNormalizationFilterFactory</a></td></tr>
+<tr><td>hindiStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/hi/HindiStemFilterFactory.html">HindiStemFilterFactory</a></td></tr>
+<tr><td>hungarianLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/hu/HungarianLightStemFilterFactory.html">HungarianLightStemFilterFactory</a></td></tr>
+<tr><td>hunspellStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/hunspell/HunspellStemFilterFactory.html">HunspellStemFilterFactory</a></td></tr>
+<tr><td>hyphenatedWords</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/HyphenatedWordsFilterFactory.html">HyphenatedWordsFilterFactory</a></td></tr>
+<tr><td>hyphenationCompoundWord</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/compound/HyphenationCompoundWordTokenFilterFactory.html">HyphenationCompoundWordTokenFilterFactory</a></td></tr>
+<tr><td>icuFolding</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUFoldingFilterFactory.html">ICUFoldingFilterFactory</a></td></tr>
+<tr><td>icuNormalizer2</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUNormalizer2FilterFactory.html">ICUNormalizer2FilterFactory</a></td></tr>
+<tr><td>icuTransform</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-icu/org/apache/lucene/analysis/icu/ICUTransformFilterFactory.html">ICUTransformFilterFactory</a></td></tr>
+<tr><td>indicNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/in/IndicNormalizationFilterFactory.html">IndicNormalizationFilterFactory</a></td></tr>
+<tr><td>indonesianStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/id/IndonesianStemFilterFactory.html">IndonesianStemFilterFactory</a></td></tr>
+<tr><td>irishLowercase</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ga/IrishLowerCaseFilterFactory.html">IrishLowerCaseFilterFactory</a></td></tr>
+<tr><td>italianLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/it/ItalianLightStemFilterFactory.html">ItalianLightStemFilterFactory</a></td></tr>
+<tr><td>kStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/en/KStemFilterFactory.html">KStemFilterFactory</a></td></tr>
+<tr><td>keepWord</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeepWordFilterFactory.html">KeepWordFilterFactory</a></td></tr>
+<tr><td>keywordMarker</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeywordMarkerFilterFactory.html">KeywordMarkerFilterFactory</a></td></tr>
+<tr><td>keywordRepeat</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/KeywordRepeatFilterFactory.html">KeywordRepeatFilterFactory</a></td></tr>
+<tr><td>latvianStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/lv/LatvianStemFilterFactory.html">LatvianStemFilterFactory</a></td></tr>
+<tr><td>length</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LengthFilterFactory.html">LengthFilterFactory</a></td></tr>
+<tr><td>limitTokenCount</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenCountFilterFactory.html">LimitTokenCountFilterFactory</a></td></tr>
+<tr><td>limitTokenOffset</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenOffsetFilterFactory.html">LimitTokenOffsetFilterFactory</a></td></tr>
+<tr><td>limitTokenPosition</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/LimitTokenPositionFilterFactory.html">LimitTokenPositionFilterFactory</a></td></tr>
+<tr><td>lowercase</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/LowerCaseFilterFactory.html">LowerCaseFilterFactory</a></td></tr>
+<tr><td>minHash</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/minhash/MinHashFilterFactory.html">MinHashFilterFactory</a></td></tr>
+<tr><td>nGram</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ngram/NGramFilterFactory.html">NGramFilterFactory</a></td></tr>
+<tr><td>norwegianLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/no/NorwegianLightStemFilterFactory.html">NorwegianLightStemFilterFactory</a></td></tr>
+<tr><td>norwegianMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/no/NorwegianMinimalStemFilterFactory.html">NorwegianMinimalStemFilterFactory</a></td></tr>
+<tr><td>numericPayload</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/payloads/NumericPayloadTokenFilterFactory.html">NumericPayloadTokenFilterFactory</a></td></tr>
+<tr><td>patternCaptureGroup</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternCaptureGroupFilterFactory.html">PatternCaptureGroupFilterFactory</a></td></tr>
+<tr><td>patternReplace</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pattern/PatternReplaceFilterFactory.html">PatternReplaceFilterFactory</a></td></tr>
+<tr><td>persianNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/fa/PersianNormalizationFilterFactory.html">PersianNormalizationFilterFactory</a></td></tr>
+<tr><td>porterStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/en/PorterStemFilterFactory.html">PorterStemFilterFactory</a></td></tr>
+<tr><td>portugueseLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseLightStemFilterFactory.html">PortugueseLightStemFilterFactory</a></td></tr>
+<tr><td>portugueseMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseMinimalStemFilterFactory.html">PortugueseMinimalStemFilterFactory</a></td></tr>
+<tr><td>portugueseStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/pt/PortugueseStemFilterFactory.html">PortugueseStemFilterFactory</a></td></tr>
+<tr><td>protectedTerm</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ProtectedTermFilterFactory.html">ProtectedTermFilterFactory</a></td></tr>
+<tr><td>removeDuplicates</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/RemoveDuplicatesTokenFilterFactory.html">RemoveDuplicatesTokenFilterFactory</a></td></tr>
+<tr><td>reverseString</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/reverse/ReverseStringFilterFactory.html">ReverseStringFilterFactory</a></td></tr>
+<tr><td>russianLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ru/RussianLightStemFilterFactory.html">RussianLightStemFilterFactory</a></td></tr>
+<tr><td>scandinavianFolding</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ScandinavianFoldingFilterFactory.html">ScandinavianFoldingFilterFactory</a></td></tr>
+<tr><td>scandinavianNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/ScandinavianNormalizationFilterFactory.html">ScandinavianNormalizationFilterFactory</a></td></tr>
+<tr><td>serbianNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/sr/SerbianNormalizationFilterFactory.html">SerbianNormalizationFilterFactory</a></td></tr>
+<tr><td>shingle</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/shingle/ShingleFilterFactory.html">ShingleFilterFactory</a></td></tr>
+<tr><td>snowballPorter</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/snowball/SnowballPorterFilterFactory.html">SnowballPorterFilterFactory</a></td></tr>
+<tr><td>soraniNormalization</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ckb/SoraniNormalizationFilterFactory.html">SoraniNormalizationFilterFactory</a></td></tr>
+<tr><td>soraniStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/ckb/SoraniStemFilterFactory.html">SoraniStemFilterFactory</a></td></tr>
+<tr><td>spanishLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/es/SpanishLightStemFilterFactory.html">SpanishLightStemFilterFactory</a></td></tr>
+<tr><td>spanishMinimalStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/es/SpanishMinimalStemFilterFactory.html">SpanishMinimalStemFilterFactory</a></td></tr>
+<tr><td>stemmerOverride</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/StemmerOverrideFilterFactory.html">StemmerOverrideFilterFactory</a></td></tr>
+<tr><td>stop</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/StopFilterFactory.html">StopFilterFactory</a></td></tr>
+<tr><td>swedishLightStem</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/sv/SwedishLightStemFilterFactory.html">SwedishLightStemFilterFactory</a></td></tr>
+<tr><td>synonym</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/synonym/SynonymFilterFactory.html">SynonymFilterFactory</a></td></tr>
+<tr><td>synonymGraph</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/synonym/SynonymGraphFilterFactory.html">SynonymGraphFilterFactory</a></td></tr>
+<tr><td>tokenOffsetPayload</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/payloads/TokenOffsetPayloadTokenFilterFactory.html">TokenOffsetPayloadTokenFilterFactory</a></td></tr>
+<tr><td>trim</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TrimFilterFactory.html">TrimFilterFactory</a></td></tr>
+<tr><td>truncate</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TruncateTokenFilterFactory.html">TruncateTokenFilterFactory</a></td></tr>
+<tr><td>turkishLowercase</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/tr/TurkishLowerCaseFilterFactory.html">TurkishLowerCaseFilterFactory</a></td></tr>
+<tr><td>type</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/TypeTokenFilterFactory.html">TypeTokenFilterFactory</a></td></tr>
+<tr><td>typeAsPayload</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/payloads/TypeAsPayloadTokenFilterFactory.html">TypeAsPayloadTokenFilterFactory</a></td></tr>
+<tr><td>typeAsSynonym</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/TypeAsSynonymFilterFactory.html">TypeAsSynonymFilterFactory</a></td></tr>
+<tr><td>uppercase</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/core/UpperCaseFilterFactory.html">UpperCaseFilterFactory</a></td></tr>
+<tr><td>wordDelimiter</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/WordDelimiterFilterFactory.html">WordDelimiterFilterFactory</a></td></tr>
+<tr><td>wordDelimiterGraph</td><td><a href="https://lucene.apache.org/core/8_3_0/analyzers-common/org/apache/lucene/analysis/miscellaneous/WordDelimiterGraphFilterFactory.html">WordDelimiterGraphFilterFactory</a></td></tr>
 </tbody>
 </table>
 </body>
